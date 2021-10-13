@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HYPERSPEED WEB</title>
+  <title>GLWEB</title>
   <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="base.css">
 </head>
 <body>
   <div class="text-box" >
-    <div class="heading">Vers l'infini et au delà</div>
+    <div class="heading">To infinity & beyond</div>
     <div class="button-wrapper">
-        <a href="https://guillaumelaine.com"><div class="button">GL WEB DEV</div></a>
-<a href="https://guillaumelaine.com">
-        <div class="button">CONTACT ME</div></a>
+      <a href="https://guillaumelaine.com"><img src="glogo.png" width="100px"></a>
+      <a href="https://codepen.io/gglaine"><img src="codepen-icon-26.jpeg" width="80px"></a>
+      <a href="https://guillaumelaine.com"><img src="cdss.png" width="100px"></a>
     </div>
   </div>
 
@@ -39,14 +39,14 @@ function init() {
       Math.random() * 600 - 300
     );
     star.velocity = 0;
-    star.acceleration = 0.02;
+    star.acceleration = 0.002;
     starGeo.vertices.push(star);
   }
 
-  let sprite = new THREE.TextureLoader().load( 'star.png' );
+  let sprite = new THREE.TextureLoader().load( 'glogo.png' );
   let starMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
-    size: 0.7,
+    size: 1.7,
     map: sprite
   });
 
